@@ -4,7 +4,7 @@ $PDO = include 'db.php';
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/x-www-form-urlencoded");
 
-if($_SERVER["REQUEST_METHOD"] === "POST") {
+if($_SERVER["REQUEST_METHOD"] === "GET") {
     $body = [];
 
     parse_str(file_get_contents("php://input"), $body);
